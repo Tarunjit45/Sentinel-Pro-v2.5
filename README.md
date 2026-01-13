@@ -1,70 +1,45 @@
-\# 🛰️ Sentinel Pro: Terminal Command Center
+# 🛰️ Sentinel Pro: Terminal Command Center v2.5
+
+![Python](https://img.shields.io/badge/python-3.12-blue.svg)
+![License](https://img.shields.io/badge/license-MIT-green.svg)
+![Build](https://img.shields.io/badge/build-passing-brightgreen.svg)
+![OS](https://img.shields.io/badge/platform-windows-lightgrey.svg)
+
+**Sentinel Pro** is a high-performance CLI dashboard that transforms your Windows Terminal into a real-time system-monitoring command center. Designed for engineers who prioritize low-latency hardware diagnostics and API-driven insights.
 
 
 
-!\[Python](https://img.shields.io/badge/python-3.12-blue.svg)
+## 🌟 Viral Features
+- **Interactive Handshake:** Enter any GitHub username to dynamically pull project stats via REST API.
+- **Smart Resource Watcher:** Real-time monitoring of CPU/RAM with a built-in **Bloatware Alert** system.
+- **Network Diagnostic:** Live latency tracking (Ping) to verify connectivity stability.
+- **System Health Algorithm:** A proprietary scoring logic that calculates your PC's "Stability Grade."
 
-!\[License](https://img.shields.io/badge/license-MIT-green.svg)
-
-!\[Build](https://img.shields.io/badge/build-passing-brightgreen.svg)
-
-
-
-\*\*Sentinel Pro\*\* is a high-performance CLI dashboard that transforms your Windows Terminal into a system-monitoring command center. Built for developers who live in the terminal.
-
-
-
-\## 🚀 Real-World Utility
-
-\- \*\*Bloatware Detection:\*\* Automatically flags processes consuming >10% RAM.
-
-\- \*\*Network Diagnostic:\*\* Real-time latency tracking to Cloudflare (1.1.1.1).
-
-\- \*\*System Health Scoring:\*\* A proprietary algorithm to determine hardware stability.
-
-\- \*\*GitHub Intelligence:\*\* Live API integration to track repository engagement.
+## 🧠 Technical Architecture
+Sentinel Pro is built on the **Rich Layout Engine**, utilizing a non-blocking refresh loop to update hardware metrics without interrupting API data streams.
 
 
 
-\## 🛠️ Architecture
+### The Health Score Formula:
+The system calculates performance based on the following weighted logic:
+$$Health Score = 100 - (\frac{CPU_{load} + RAM_{usage}}{2})$$
 
-The system utilizes a multi-threaded layout engine to render hardware metrics and API data simultaneously without UI blocking.
+## 📥 Getting Started
 
+### Prerequisites
+- Windows Terminal (Recommended for CRT effects)
+- Python 3.10+
 
-
-
-
-
-
-\## 📥 Installation
-
+### Installation
 ```bash
+# Clone the repository
+git clone [https://github.com/Tarunjit45/Sentinel-Pro-v2.5.git](https://github.com/Tarunjit45/Sentinel-Pro-v2.5.git)
 
-git clone \[https://github.com/YOUR\_USERNAME/GhostPortfolio.git](https://github.com/YOUR\_USERNAME/GhostPortfolio.git)
+# Enter directory
+cd Sentinel-Pro-v2.5
 
-cd GhostPortfolio
-
+# Install dependencies
 pip install -r requirements.txt
 
+# Run the Command Center
 python dossier.py
-
-
-
-
-
----
-
-
-
-\### Step 3: Package it for Recruiters (.exe)
-
-Now, let’s create that standalone file so recruiters can run it without needing Python. Run this command:
-
-
-
-```powershell
-
-pip install pyinstaller
-
-pyinstaller --onefile --name "Sentinel\_Pro" dossier.py
-
