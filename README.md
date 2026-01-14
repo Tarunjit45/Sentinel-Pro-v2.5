@@ -7,6 +7,7 @@
 
 **Sentinel Pro** is a high-performance CLI dashboard that transforms your Windows Terminal into a real-time system-monitoring command center. Designed for engineers who prioritize low-latency hardware diagnostics and API-driven insights.
 
+<img width="1451" height="710" alt="Screenshot 2026-01-14 155927" src="https://github.com/user-attachments/assets/57279718-3057-4376-b278-32232c7ad4b9" />
 
 
 ## 🌟 Viral Features
