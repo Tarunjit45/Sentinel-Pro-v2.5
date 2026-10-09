@@ -1,68 +1,53 @@
-# 🚀 Sentinel-Pro-v2.5
+# 🛰️ Sentinel Pro v2.5 — Real-Time Terminal Command Center & Diagnostics
 
-![Language](https://img.shields.io/badge/Language-Python-blue?style=for-the-badge)
-![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
-![Status](https://img.shields.io/badge/Production-Active-success?style=for-the-badge)
+[![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
+[![Rich](https://img.shields.io/badge/UI-Rich%20Live%20Terminal-E91E63?style=for-the-badge)](https://rich.readthedocs.io/)
+[![Hardware](https://img.shields.io/badge/Diagnostics-psutil-009688?style=for-the-badge)](https://psutil.readthedocs.io/)
+[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 
-## 📌 Overview
+**Sentinel Pro v2.5** is a terminal-based system monitoring command center built in Python. Designed for developers and system administrators who demand low-latency hardware diagnostics, network health probes, and active process tracking—all rendered in a live, colorized **Rich** terminal layout.
 
-Sentinel Pro is a high-performance CLI dashboard that transforms your Windows Terminal into a real-time system-monitoring command center. Designed for engineers who prioritize low-latency hardware diagnostics and API-driven insights.
+---
 
-## ✨ Key Features & Architecture
+## ✨ Features
 
-- **High-Performance Codebase:** Built using `Python` and modern engineering principles.
-- **Modular & Scalable Design:** Structured directory tree for seamless development and deployment.
+* 📊 **Live Hardware Telemetry:** Dynamic gauges for CPU utilization, RAM consumption, and disk partition saturation.
+* 🌐 **Network Health Probe:** Solves the *"Is my internet slow?"* problem with real-time ping latency checks and gateway reachability.
+* ⚙️ **Process Dossier:** Real-time top process inspector with memory and CPU hog identification.
+* 🎨 **Colorized Terminal Layout:** Multi-panel dashboard using `rich.live` and `rich.layout` that auto-refreshes without terminal flickering.
 
-## 🛠️ Tech Stack & Dependencies
+---
 
-- **Core Language:** `Python`
-- **Libraries & Tools:** Python
-- **Deployment Infrastructure:** Vercel Edge / Cloud Services
-
-## 📁 Architecture & File Layout
+## 📁 Repository Structure
 
 ```text
 Sentinel-Pro-v2.5/
-├── .github
-├── .github/ISSUE_TEMPLATE
-├── .github/ISSUE_TEMPLATE/bug_report.md
-├── .github/ISSUE_TEMPLATE/feature_request.md
-├── .github/PULL_REQUEST_TEMPLATE.md
-├── .github/workflows
-├── .github/workflows/ci.yml
-├── CODE_OF_CONDUCT.md
-├── CONTRIBUTING.md
-├── LICENSE
-├── README.md
-├── dossier.py
-├── requirements.txt
+├── dossier.py          # Core monitoring loop, Rich layout engine & diagnostic probes
+├── requirements.txt    # Dependencies (psutil, rich, requests)
+├── LICENSE             # MIT License
+└── README.md
 ```
 
-## 🚀 Quickstart & Installation
+---
 
-### Prerequisites
-- Python 3.9+
-- pip package manager
+## 🚀 Quick Start
 
-### Setup Instructions
+### 1. Installation
+```bash
+git clone https://github.com/Tarunjit45/Sentinel-Pro-v2.5.git
+cd Sentinel-Pro-v2.5
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/Tarunjit45/Sentinel-Pro-v2.5.git
-   cd Sentinel-Pro-v2.5
-   ```
+pip install -r requirements.txt
+```
 
-2. **Install dependencies:**
-   ```bash
-   pip install -r requirements.txt
-   ```
+### 2. Run Sentinel Pro
+```bash
+python dossier.py
+```
 
-3. **Execute application:**
-   ```bash
-   python main.py
-   ```
+Press `Ctrl+C` to cleanly exit the command center.
 
-## 📜 Author & License
+---
 
-Architected & Developed by **[Tarunjit Biswas](https://github.com/Tarunjit45)**.  
-Distributed under the **MIT License**.
+## 📄 License
+This project is licensed under the [MIT License](LICENSE).
